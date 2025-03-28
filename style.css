@@ -1,0 +1,110 @@
+body {
+    background: url("./images/black.png");
+    /* แทนที่ kitty-background.jpg ด้วยชื่อไฟล์รูปภาพลายคิตตี้ของคุณ */
+    background-repeat: repeat;
+    background-size: auto;
+    /*background-color: rgb(244, 201, 234);*/ /* สีพื้นหลังสำรอง */
+}
+ 
+/* เพิ่มเติม: ปรับแต่งองค์ประกอบอื่นๆ ตามต้องการ */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* พื้นหลังโปร่งแสงสำหรับ header */
+}
+ 
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* พื้นหลังโปร่งแสงสำหรับ section */
+    border-radius: 10px;
+}
+ 
+.profile-image {
+    .profile-image {
+        border-radius: 0; /* ทำให้รูปเป็นสี่เหลี่ยม */
+        width: 160px; /* ขนาดของรูป */
+        height: 160px; /* ขนาดของรูป */
+    }
+    
+}
+ 
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+button {
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #ceeaec; /* สีชมพูสดใส */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+ 
+button:hover {
+    background-color: #4267cc; /* สีชมพูเข้มเมื่อโฮเวอร์ */
+    transform: scale(1.05);
+}
+ 
+a:link {
+    text-decoration: none;
+}
+ 
+.container {
+    display: flex;
+    flex-direction: column; /* เรียงเป็นแนวตั้ง */
+    align-items: center;
+}
+ 
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row; /* บนอุปกรณ์ใหญ่ให้เรียงเป็นแนวนอน */
+        justify-content: center;
+    }
+}
+ 
+/* 📱 สำหรับมือถือ (เล็กกว่า 600px) */
+@media screen and (max-width: 600px) {
+    section {
+        padding: 10px;
+        margin: 5px;
+    }
+   
+    button {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
+ 
+/* 📟 สำหรับแท็บเล็ต (600px - 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    section {
+        padding: 15px;
+        margin: 15px;
+    }
+ 
+    button {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+}
+ 
+/* 💻 สำหรับเดสก์ท็อป (ใหญ่กว่า 1024px) */
+@media screen and (min-width: 1025px) {
+    section {
+        width: 70%;
+        margin: auto;
+    }
+}
+ 
